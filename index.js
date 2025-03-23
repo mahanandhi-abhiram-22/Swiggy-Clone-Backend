@@ -9,7 +9,7 @@ const bodyParser = require('body-parser');
 dotenv.config();
 
 const app = express();
-const port = 4000;
+const port = process.env.port ||4000;
 
 // ✅ Middleware
 app.use(express.json());
