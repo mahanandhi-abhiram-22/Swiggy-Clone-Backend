@@ -27,7 +27,7 @@ app.use('/firm', firmRoutes);
 app.use('/product', productRoutes);
 
 // ✅ Test Route
-app.get('/home', (req, res) => {
+app.get('/', (req, res) => {
     res.send('<h1>Welcome to the Home Page</h1>');
 });
 
